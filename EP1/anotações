@@ -1,0 +1,15 @@
+Afazeres:
+- ajustar tamanho (Facil) **
+- Rotação:
+	- alg hough (QUANTO) -> conseguir as linhas (rho e Theta)
+	- alg. rot  (img, angulo) -> (img_rot)
+	
+- Match template
+
+
+fator ampliacao = (depois_x/antesx)*(depois_y/antes_y)
+
+
+ 
+
+
