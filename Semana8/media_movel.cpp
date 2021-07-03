@@ -22,7 +22,8 @@ imp(a,"antes.png");
 
 int main(){ 
     Mat_<GRY> a;  
-    le(a,"janei.pgm"); 
+    le(a,"qp.pgm"); 
     Mat_<GRY> b=mediamov(a); 
-    imp(b,"janei_mv.pgm");
+    Mat_<GRY> c=mediamov(b); 
+    imp(c,"qp_mv.pgm");
 }

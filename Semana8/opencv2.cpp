@@ -77,30 +77,33 @@ Mat_<GRY> opencv2(Mat_<COR> ax, Mat_<GRY> ay, Mat_<COR> qx){
     
 int main (){
     
-    /*Mat_<GRY> janei;
+    Mat_<GRY> janei;
     le(janei, "janei_mv.pgm");
     Mat_<GRY> janei_filtrado;
-    janei_filtrado = mediana(janei, -2, 2, -2, 2);
-    imp(janei_filtrado, "janei_mv_mediana.pgm");
-    */
+    //janei_filtrado = mediana(janei, -2, 2, -2, 2);
+    imp(janei_filtrado, "janei_mv.pgm");
+    
 
    
     Mat_<COR> ax;
-    le(ax, "janei_mv_mediana.pgm");
-
+    le(ax, "janei_mv.pgm");
+//
     Mat_<GRY> ay;
     le(ay, "janei-1.pgm");
-
+//
     Mat_<COR> qx;
-    le(qx, "janei_mv_mediana.pgm");
-
-    Mat_<GRY> qp = opencv2(ax, ay, qx);
-    imp(qp, "janei_qp.pgm");
-
-    Mat_<GRY> qp_filtrado;
-    qp_filtrado = mediana(qp, -4, 4, -4, 4);
-
-    imp(qp_filtrado, "janei_qp_filtrado.pgm");
+    le(qx, "julho_mv2.pgm");
+    Mat_<GRY> qx_filtrado;
+    //qx_filtrado = mediana(qx, -1, 1, -1, 1);
+    imp(qx_filtrado, "julho_mv_mediana.pgm");
+//
+    //Mat_<GRY> qp = opencv2(ax, ay, qx);
+    //imp(qp, "janei_qp.pgm");
+//
+    //Mat_<GRY> qp_filtrado;
+    //qp_filtrado = mediana(qp, -4, 4, -4, 4);
+//
+    //imp(qp_filtrado, "janei_qp_filtrado.pgm");
     
 
 

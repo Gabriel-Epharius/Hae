@@ -7,8 +7,8 @@ Mat_<GRY> mediana(Mat_<GRY> a){
     for(int l=0; l<b.rows; l++)
         for(int c=0; c<b.cols; c++){ 
                  vector<int> v;
-                 for(int l2=-1; l2<=2; l2++)
-                    for(int c2=-1; c2<=2; c2++)
+                 for(int l2=-2; l2<=2; l2++)
+                    for(int c2=-2; c2<=2; c2++)
                         if(0<=l+l2 && l+l2<a.rows &&0<=c+c2 && c+c2<a.cols){
                                  v.push_back(a(l+l2,c+c2));
                         }
@@ -21,13 +21,10 @@ Mat_<GRY> mediana(Mat_<GRY> a){
                         b(l,c)=*meio;
                     
                         }
-                            
     return b;
-                            }
-                            
-                            
+                            }        
                             int main(){ 
-                                 Mat_<GRY> a;  le(a,"janei.pgm"); 
+                                 Mat_<GRY> a;  le(a,"janei_flann.png"); 
                                   Mat_<GRY> b=mediana(a); 
-                                  imp(b,"janei_filtrado.pgm");}
+                                  imp(b,"janei_flann_final.pgm");}
 
