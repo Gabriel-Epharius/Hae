@@ -4,7 +4,7 @@
 
 int main(){  
     Mat_<COR> ax; 
-    le(ax,"janei.pgm");  
+    le(ax,"janei-filtrado.pgm");  
     
     Mat_<GRY> ay; 
     le(ay,"janei-1.pgm");
