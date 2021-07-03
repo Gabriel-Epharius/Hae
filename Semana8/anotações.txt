@@ -4,5 +4,5 @@ b) treino opencv2
 c) aplicação do filtro no janei filtrado 
 d) consegui um bom resultado, falta filtro
 
-2) 
+DEU BOM NO JANEI) 
 janei - > mv 3x3 -> mediana 5x5 -> opencv2 -> mediana 5x5
